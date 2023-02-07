@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+}
+
+body {
+    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+.icon-menu {
+    font-size: 40px;
+    display: none;
+}
+
+#menu-inicial {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    margin-top: 7px;
+    display: flex;
+}
+
+li {
+    display: flex;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(109, 108, 108);
+    transition: 0.3s all;
+}
+
+#menu2 {
+    display: none;
+}
+
+#container {
+    margin: auto;
+    margin-top: 30px;
+    flex-direction: column;
+    border: 3px solid black;
+    box-shadow: rgb(71, 71, 71) 7px 7px;
+    border-radius: 10px;
+    height: 480px;
+    width: 600px;
+}
+
+#sobre-mim {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 30px;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+}
+
+#container-input {
+    padding-top: 15px;
+    text-align: center;
+    flex-direction: column;
+}
+
+form {
+    outline: unset;
+}
+
+input {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid rgb(85, 84, 84);
+    height: 20px;
+    width: 220px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+#botao {
+    height: 10px;
+    width: 230px;
+    padding-top: 10px;
+    padding-bottom: 23px;
+    border-radius: 20px;
+    border: 2px solid rgb(85, 84, 84);
+    cursor: pointer;
+}
+
+#botao:hover {
+background-color: rgb(109, 108, 108);
+transition: 0.3s all;
+}
+
+
+@media screen and (max-width: 600px){
+    
+    header {
+        height: 80px;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    #menu-inicial {
+        padding-top: 10px;
+    }
+
+    .icon-menu{
+        display: block;
+        cursor: pointer;
+        margin-top: 7px;
+    }
+    
+    menu{
+        display: flex;
+    }
+ 
+    #container{
+        height: 480px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #sobre-mim {
+        margin-top: 55px;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    #container{
+        margin-top: 100px;
+        height: 550px;
+        width: 350px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    #container-input {
+        margin-top: 40px;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    input {
+        height: 45px;
+        width: 250px;
+        margin-top: 5px;
+    }
+
+    #botao {
+        width: 200px;
+    }
+
+}
+
+
+
+
+
+
+
+

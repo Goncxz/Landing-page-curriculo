@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina de login</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <div id="menu-inicial">
+            <h1>Meu curriculo</h1>
+            <span class="material-symbols-outlined icon-menu">menu</span>
+            <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Projetos </a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Saiba mais</a></li>
+            </ul>
+            </nav>
+            </div>
+    </header>
+    <menu>
+        <ul id="menu2">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Saiba mais</a></li>
+        </ul>
+    </menu>
+<main>
+    <div id="container">
+        <h1 id="sobre-mim">Seja bem-vindo ao curriculo de Daniel, aqui você ira conhecer sobre seus projetos e desenvolvimentos.</h1>
+        <div id="container-input">
+            <h2>Preencha com seus dados abaixo:</h2>
+            <form>
+            <input type="text" placeholder="Insira seu nome" required>
+            <input type="email" placeholder="Insira seu e-mail" required>
+            <input id="botao" onclick="clicar()" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</main>
+ <script src="script.js"></script>
+</body>
+</html>
